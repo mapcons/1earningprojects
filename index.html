@@ -150,7 +150,6 @@
                     id="myVideo"
                     controls
                     autoplay
-                    muted
                     playsinline
                     webkit-playsinline
                     preload="auto"
@@ -159,9 +158,6 @@
                     Your browser does not support the video tag.
                 </video>
 
-                <div class="note-bar">
-                    The video starts muted for the best chance of autoplay. Use the speaker control to turn sound on.
-                </div>
             </div>
 
             <div class="status" id="statusMessage"></div>
@@ -191,8 +187,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    video.muted = true;
-    video.setAttribute("muted", "muted");
     video.setAttribute("playsinline", "playsinline");
 
     tryAutoplay();
@@ -206,3 +200,4 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 </body>
 </html>
+
