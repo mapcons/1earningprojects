@@ -4,7 +4,6 @@
 <head>
 <meta charset="utf-8">
 <title>Your eKit Logistics</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
@@ -34,12 +33,18 @@ video{
 <body>
 
 <div id="videoContainer">
-<video controls autoplay muted>
+<video muted autoplay playsinline controls id="myVideo">
 <source src="https://mapconsulting.com/wp-content/uploads/eKit-Navigation-Video.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 </div>
 
+<script>
+window.onload = function() {
+    var vid = document.getElementById("myVideo");
+    vid.play().catch(function(e){});
+};
+</script>
+
 </body>
 </html>
-
