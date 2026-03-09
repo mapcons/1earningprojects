@@ -5,40 +5,39 @@
 <meta charset="utf-8">
 <title>Your eKit Logistics</title>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-#videoContainer {
-    width: 800px;
-    max-width: 100%;
-    margin: 50px auto;
-    cursor: pointer;
+body{
+    margin:0;
+    padding:40px;
+    background:#f5f5f5;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
 }
 
-#videoContainer img {
-    width: 100%;
-    height: auto;
-    display: block;
+#videoContainer{
+    max-width:900px;
+    margin:auto;
+}
+
+video{
+    width:100%;
+    height:auto;
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+    border-radius:6px;
 }
 </style>
-
-<script>
-function playVideo() {
-    var container = document.getElementById("videoContainer");
-
-    container.innerHTML = `
-        <video width="100%" controls autoplay>
-            <source src="https://mapconsulting.com/wp-content/uploads/eKit-Navigation-Video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    `;
-}
-</script>
 
 </head>
 
 <body>
 
-<div id="videoContainer" onclick="playVideo()">
-    <img src="https://mapconsulting.com/wp-content/uploads/videoThumbnail.png" alt="Click to play video">
+<div id="videoContainer">
+<video controls autoplay>
+<source src="https://mapconsulting.com/wp-content/uploads/eKit-Navigation-Video.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 </div>
 
 </body>
