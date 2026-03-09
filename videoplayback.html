@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>Your eKit Logistics</title>
+
+<style>
+#videoContainer {
+    width: 800px;
+    max-width: 100%;
+    margin: 50px auto;
+    cursor: pointer;
+}
+
+#videoContainer img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+</style>
+
+<script>
+function playVideo() {
+    var container = document.getElementById("videoContainer");
+
+    container.innerHTML = `
+        <video width="100%" controls autoplay>
+            <source src="https://mapconsulting.com/wp-content/uploads/eKit-Navigation-Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    `;
+}
+</script>
+
+</head>
+
+<body>
+
+<div id="videoContainer" onclick="playVideo()">
+    <img src="https://mapconsulting.com/wp-content/uploads/videoThumbnail.png" alt="Click to play video">
+</div>
+
+</body>
+</html>
